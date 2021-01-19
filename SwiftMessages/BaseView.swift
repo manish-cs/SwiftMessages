@@ -162,7 +162,7 @@ open class BaseView: UIView, BackgroundViewable, MarginAdjustable {
     }
 
     fileprivate lazy var tapRecognizer: UITapGestureRecognizer = {
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(MessageView.tapped))
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(SMMessageView.tapped))
         return tapRecognizer
     }()
 

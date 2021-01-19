@@ -15,14 +15,14 @@ class ExploreViewController: UITableViewController, UITextFieldDelegate {
         
         // View setup
         
-        let view: MessageView
+        let view: SMMessageView
         switch layout.selectedSegmentIndex {
         case 1:
-            view = MessageView.viewFromNib(layout: .cardView)
+            view = SMMessageView.viewFromNib(layout: .cardView)
         case 2:
-            view = MessageView.viewFromNib(layout: .tabView)
+            view = SMMessageView.viewFromNib(layout: .tabView)
         case 3:
-            view = MessageView.viewFromNib(layout: .statusLine)
+            view = SMMessageView.viewFromNib(layout: .statusLine)
         default:
             view = try! SwiftMessages.viewFromNib()
         }

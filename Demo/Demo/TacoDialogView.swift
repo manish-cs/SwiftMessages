@@ -9,7 +9,7 @@
 import UIKit
 import SwiftMessages
 
-class TacoDialogView: MessageView {
+class TacoDialogView: SMMessageView {
 
     fileprivate static var tacoTitles = [
         1 : "Just one, Please",
